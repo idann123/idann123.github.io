@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Poppins", Poppins;
 }
 
@@ -13,8 +15,24 @@ body {
   font-family: 'Instrument Sans';
 }
 
+.brand {
+  width: 40px;
+}
+
+.ig {
+  color: rgb(214, 41, 118);
+}
+
 .carousel-item {
   height: 400px;
+}
+
+.footer {
+  padding: 6px 0 6px 0;
+}
+
+.bg-abu-abu {
+  background-color: #e5e7eb;
 }
 
 /* Article */
@@ -58,8 +76,70 @@ body {
 }
 
 /* Responsive */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .carousel {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
   .carousel-item {
-    height: 200px;
+    height: 350px;
+  }
+
+  .sosmed {
+    font-size: medium;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .carousel-item {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .mini {
+    margin: 0 15px 0 15px;
+    padding: 2px 0 2px 0;
+  }
+
+  .carousel-item {
+    height: 192px;
+  }
+
+  .txt {
+    font-size: 18px;
+  }
+
+  .brand {
+    width: 30px;
+  }
+
+  .card {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+  }
+
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer p {
+    font-size: small;
   }
 }
