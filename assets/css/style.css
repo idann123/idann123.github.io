@@ -20,7 +20,14 @@ body {
 }
 
 .ig {
-  color: rgb(214, 41, 118);
+  background: linear-gradient(20deg, rgba(254, 218, 112, 1) 0%, rgba(250, 126, 30, 1) 24%, rgba(214, 41, 112, 1) 60%, rgba(150, 47, 191, 1) 81%, rgba(79, 91, 213, 1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.yt {
+  color: rgba(255, 0, 0, 1);
 }
 
 .carousel-item {
@@ -36,7 +43,7 @@ body {
 }
 
 /* Article */
-.main {
+/* .main {
   margin-top: 20px;
   display: flex;
 }
@@ -73,7 +80,7 @@ body {
 
 .image {
   width: 768px;
-}
+} */
 
 /* Responsive */
 @media only screen and (max-width: 991px) {
