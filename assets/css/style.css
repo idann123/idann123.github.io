@@ -30,6 +30,34 @@ body {
   color: rgba(255, 0, 0, 1);
 }
 
+/* Hamburger Menu */
+.hamburger-menu {
+  background-color: transparent;
+  border: none;
+}
+
+.hamburger-menu span {
+  display: none;
+  width: 25px;
+  height: 2px;
+  margin-bottom: 6px;
+  background-color: rgba(85, 85, 85, 0.9);
+  border-radius: 50px;
+  transition: .3s;
+}
+
+.animate .bar1 {
+  transform: translate(0, 8px) rotate(45deg);
+}
+
+.animate .bar2 {
+  transform: scale(0);
+}
+
+.animate .bar3 {
+  transform: translate(0, -8px) rotate(-45deg);
+}
+
 .carousel-item {
   height: 400px;
 }
@@ -84,6 +112,10 @@ body {
 
 /* Responsive */
 @media only screen and (max-width: 991px) {
+  .hamburger-menu span {
+    display: block;
+  }
+
   .footer {
     display: flex;
     flex-direction: column;
