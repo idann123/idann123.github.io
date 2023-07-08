@@ -118,8 +118,9 @@
       <div
         class="swiper"
         style="
-          --swiper-navigation-color: rgb(54, 54, 54);
-          --swiper-pagination-color: rgb(54, 54, 54);
+          --swiper-navigation-color: rgb(211, 211, 211);
+          --swiper-pagination-color: rgba(53, 53, 53, 0.9);
+          opacity: 1;
         ">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
@@ -145,11 +146,13 @@
         </div>
 
         <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+        <div
+          class="swiper-pagination"
+          style="opacity: 1; position: relative; bottom: -3px"></div>
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev" style="opacity: 1"></div>
+        <div class="swiper-button-next" style="opacity: 1"></div>
       </div>
 
       <!-- Swiper End -->
@@ -351,7 +354,7 @@
         // // Optional parameters
         // direction: "vertical",
         autoplay: {
-          delay: 3000,
+          delay: 2500,
           disableOnInteraction: false,
         },
         loop: true,
