@@ -127,6 +127,11 @@ body {
   z-index: 5;
 }
 
+.more:hover svg {
+  display: inline;
+  transition: 1s;
+}
+
 .footer {
   padding: 6px 0 6px 0;
 }
@@ -187,8 +192,13 @@ body {
 }
 
 .sharing {
+  border-top: 1px solid rgba(85, 85, 85, 0.2);
   text-align: end;
   padding: 10px;
+}
+
+.caption a {
+  color: black;
 }
 
 /*
