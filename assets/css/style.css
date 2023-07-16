@@ -7,12 +7,12 @@ body {
 /* Main Page */
 .navbar {
   backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(255, 255, 255, 0.8);
   z-index: 10;
 }
 
 .navbar-brand {
-  font-family: 'Instrument Sans';
+  font-family: "Instrument Sans";
 }
 
 .brand {
@@ -20,7 +20,14 @@ body {
 }
 
 .ig {
-  background: linear-gradient(20deg, rgba(254, 218, 112, 1) 0%, rgba(250, 126, 30, 1) 24%, rgba(214, 41, 112, 1) 60%, rgba(150, 47, 191, 1) 81%, rgba(79, 91, 213, 1) 100%);
+  background: linear-gradient(
+    20deg,
+    rgba(254, 218, 112, 1) 0%,
+    rgba(250, 126, 30, 1) 24%,
+    rgba(214, 41, 112, 1) 60%,
+    rgba(150, 47, 191, 1) 81%,
+    rgba(79, 91, 213, 1) 100%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -43,7 +50,7 @@ body {
   margin-bottom: 6px;
   background-color: rgba(85, 85, 85, 0.9);
   border-radius: 50px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .animate .bar1 {
@@ -83,23 +90,32 @@ body {
 .judul-artikel {
   position: absolute;
   display: block;
-  background-color: rgba(0, 0, 0, .1);
+  background-color: rgba(0, 0, 0, 0.1);
   z-index: 10;
 }
 
-/* .carousel-item {
-  height: 400px;
-} */
-
 .card {
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, .1);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   padding: 0;
   border: none;
 }
 
 .button {
   position: relative;
-  transition: .3s;
+}
+
+.icon {
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon i {
+  display: none;
 }
 
 .button:hover .icon {
@@ -109,12 +125,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, .8);
-}
-
-.icon i {
-  display: none;
-  transition: .6s;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .button:hover .icon i {
@@ -127,9 +138,28 @@ body {
   z-index: 5;
 }
 
-.more:hover svg {
-  display: inline;
-  transition: 1s;
+.btn-share {
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-share:hover {
+  padding-right: 25px;
+}
+
+.btn-share i {
+  opacity: 0;
+  position: absolute;
+  transition: 0.5s;
+  top: 7px;
+  right: 5px;
+}
+
+.btn-share:hover i {
+  opacity: 1;
+  position: absolute;
+  top: 7px;
+  right: 6px;
 }
 
 .footer {
@@ -149,18 +179,8 @@ body {
   border-bottom: none;
 }
 
-/* .main {
-  margin-top: 20px;
-  display: flex;
-}
-
-.side {
-  width: 40%;
-}
-*/
-
 .article {
-  background-color: rgb(233, 233, 233, .5);
+  background-color: rgb(233, 233, 233, 0.5);
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 5px;
@@ -177,10 +197,9 @@ body {
   border-radius: 50%;
 }
 
-
 .icon-share:hover {
-  background-color: rgba(160, 160, 160, .5);
-  color: rgba(59, 59, 59, .5);
+  background-color: rgba(160, 160, 160, 0.5);
+  color: rgba(59, 59, 59, 0.5);
 }
 
 .img-thumbnail {
@@ -201,25 +220,6 @@ body {
   color: black;
 }
 
-/*
-.vl {
-  border-left: 1px solid rgba(51, 51, 51, 0.2);
-}
-
-
-.title {
-  color: rgb(122, 122, 255);
-  text-align: center;
-}
-
-.isi-berita {
-  margin-top: 80px;
-}
-
-.image {
-  width: 768px;
-} */
-
 /* Responsive */
 @media only screen and (max-width: 991px) {
   .hamburger-menu span {
@@ -233,7 +233,6 @@ body {
   .title {
     font-size: 26px;
   }
-
 
   .footer {
     display: flex;
@@ -299,7 +298,6 @@ body {
     margin-right: 15px;
     margin-bottom: 40px;
   }
-
 
   .footer {
     display: flex;
